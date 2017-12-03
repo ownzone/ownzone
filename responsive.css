@@ -1,0 +1,153 @@
+.if_mobile {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    .cover h1 span {
+        font-size: 70px;
+        font-weight: normal;
+    }
+    #works .item>div {
+        padding: 100px 50px;
+    }
+    #works .item div.left {
+        padding-right: 100px;
+    }
+    #works .item div.right {
+        padding-left: 100px;
+    }
+    #works .item div.right h3 {
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #works .item div.right h3:before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .cover {
+        font-size: 80%;
+    }
+    .cover h1 span {
+        font-size: 200%;
+    }
+    .header .mobile {
+        display: inline-block!important;
+    }
+    .header .button {
+        display: none!important;
+    }
+    .header .logo img {
+        width: 150px;
+    }
+    .header .menu {
+        display: none;
+        position: fixed;
+        z-index: 101;
+        top: 84px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.10);
+        font-size: 14px;
+    }
+    .header .menu.toggle {
+        display: inline-block!important;
+    }
+    .header .menu * {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header .menu ul {
+        display: block;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .header .menu ul li {
+        border-top: 1px solid #f6f6f6;
+    }
+    .header .menu ul li>a {
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .header .menu ul li>a:hover {
+        opacity: .7;
+    }
+    #works .item div.left {
+        float: none;
+        padding-right: 0;
+        background: #DC0000;
+        color: #fff;
+        display: block;
+        width: auto;
+    }
+    #works .item div.right {
+        float: none;
+        display: block;
+        padding-left: 0;
+        background: #FE0000;
+        color: #fff;
+        font-size: 18px;
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.14);
+        width: auto;
+        text-align: center;
+    }
+    #works .item>div {
+        padding: 50px 20px;
+    }
+    #works .item div.left {
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    #works .item div.right {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    #works .navbtn {
+        top: -25px;
+        left: 50%;
+        margin-top: 0;
+        box-shadow: 0 4px 0 rgba(0,0,0,0.10);
+    }
+    footer {
+        font-size: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .cover h1 b {
+        font-family: 'Avenir LT Std 95 Black';
+        border: 2px solid #fff;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        display: block;
+        line-height: auto;
+        font-size: 100%;
+    }
+    .if_mobile {
+        display: block!important;
+    }
+    .if_web {
+        display: none;
+    }
+    .grid .item {
+        display: block;
+        float: none;
+        padding: 20px;
+        width: auto!important;
+    }
+    .right {
+        text-align: left;
+    }
+}
